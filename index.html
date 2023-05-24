@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/js_77_oleksander-kozlov/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAhpJREFUOE+lk1tI03EUxz///aebFlE9zHA1iS7S1sw0fFELYrMeFmpBYBAxukDSXREiqIhWRBCERkaFQRdLuhDMYCE1JMYcRZiQqFtaLXBb9FCpm277x/8/mkR7GZ6nH+d3vp9z4Rwh4rGeTsIpAXLJwiSYVoFDCHmssWzFf/PIECHssUpZJP4vVAH4BoyMBQuVT0GQMBSOU2H+qLxlm4mLOF9XM/J5GfqCCPUWN/l50VS8DDjiaCL0fTFlxiHiCRF3XzlLl4TpuHhOCWpoOo9aTGCt7OPNu1KGxwy4bh1GkzszCzCv8rN/53NFMBXVYLJ10dPRiCgm2LT7Bn7XdtTqBJIE2w5eoWXfXTZueJ8ZMDGppaS2E8/DvUrmdbUPcLYfp3TNcOYZyC18G9dhLvaTSKrwfTCxp66bXTaXIujsruFs6wHMqwPUWdzsqHlFnjb27wxy1HG2VHlJJlX0vl1P4Iuee5fPIPtlm4xq6fFU8OiFlcHAcp61NVOkH8/cgiyQ+2xseExJ8Ygyk5VFwXT5Ry80MT9/Esex65kBkiRgsV/jhP0+E1NabnbV8/L2IQQhxXC02/n5ex6XmttmAZEfiyg3DSot+AZMRKManrS2IMPkavQFYbZWeQmGdNx5aqPr6kmMK0ZTAG//Wj591acXSa+LUFnWjygmFV9sOgenu5qhUQMLF/yidnOvslDpRZrTKs/5mOZ6zn8AB2/2QyZ9TUMAAAAASUVORK5CYII=" />
+    <link rel="manifest" href="/js_77_oleksander-kozlov/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    
+    <script type="module" crossorigin src="/js_77_oleksander-kozlov/assets/index-524e8153.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_77_oleksander-kozlov/assets/pagination-shop-list-3ce19590.js">
+    <link rel="stylesheet" href="/js_77_oleksander-kozlov/assets/pagination-shop-list-10db8b2e.css">
+  </head>
+
+  <body>
+    <div id="scrollUpButton" class="scrollup">
+    <svg class="scrollup-svg" width="24" height="24">
+        <use href="/js_77_oleksander-kozlov/assets/scrollup-2e797268.svg#icon-scrollup"></use>
+    </svg>
+</div>
+
+    <div class="authorization__bacdrop is-hidden" data-modal="">
+  <!-- modal -->
+  <div class="blur-component"></div>
+  <div class="authorization__modal authorization__modal__dark">
+    <!-- close btn -->
+    <button class="authorization__button__close" data-modal-close="">
+      <svg class="authorization__icon__close authorization__icon__close__dark" aria-label="close modal window">
+        <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#x-close"></use>
+      </svg>
+    </button>
+    <!-- form -->
+    <form class="authorization__form" id="sign-up">
+      <!-- inputs -->
+      <div class="authorization__field">
+        <input
+          type="text"
+          name="name"
+          class="authorization__input authorization__input__dark"
+          id="user_name"
+          required=""
+          placeholder="&#32;"
+          autocomplete="off"
+        />
+        <label class="authorization__label" for="user_name">name</label>
+      </div>
+
+      <div class="authorization__field">
+        <input
+          type="email"
+          name="email"
+          class="authorization__input authorization__input__dark"
+          id="user_email_up"
+          required=""
+          placeholder="&#32;"
+        />
+        <label class="authorization__label" for="user_email_up">email</label>
+        <svg class="authorization__icon authorization__icon__dark">
+          <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#email"></use>
+        </svg>
+      </div>
+
+      <div class="authorization__field">
+        <input
+          type="password"
+          name="password"
+          class="authorization__input authorization__input__dark"
+          id="user_password_up"
+          required=""
+          placeholder="&#32;"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+        />
+        <label class="authorization__label" for="user_password_up"
+          >password
+        </label>
+        <svg class="authorization__icon authorization__icon__dark">
+          <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#lock"></use>
+        </svg>
+      </div>
+      <!-- btn submit -->
+      <button type="submit" class="authorization__btn__submit authorization__btn__submit__dark">Sign up</button>
+    </form>
+    
+<form class="authorization__form display-form" id="sign-in">
+  <!-- inputs -->
+
+  <div class="authorization__field">
+    <input
+      type="email"
+      name="email"
+      class="authorization__input authorization__input__dark"
+      id="user_email_in"
+      required=""
+      placeholder="&#32;"
+    />
+    <label class="authorization__label" for="user_email_in">email</label>
+    <svg class="authorization__icon authorization__icon__dark">
+      <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#email"></use>
+    </svg>
+  </div>
+
+  <div class="authorization__field">
+    <input
+      type="password"
+      name="password"
+      class="authorization__input authorization__input__dark"
+      id="user_password_in"
+      required=""
+      placeholder="&#32;"
+      pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+      title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+    />
+    <label class="authorization__label" for="user_password_in"
+      >password
+    </label>
+    <svg class="authorization__icon authorization__icon__dark ">
+      <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#lock"></use>
+    </svg>
+  </div>
+  <!-- btn submit -->
+  <button type="submit" class="authorization__btn__submit authorization__btn__submit__dark">Sign in</button>
+</form>
+    <div class="authorization__link__block">
+      <button
+        type="button"
+        class="authorization__link active-link"
+        data-action="sign-up"
+      >
+        sign up
+      </button>
+      <button
+        type="button"
+        class="authorization__link desactive-link"
+        data-action="sign-in"
+      >
+        sign in
+      </button>
+    </div>
+  </div>
+</div>
+    <header class="header">
+  <div class="container header-content">
+    <!-- HEADER LOGO -->
+
+    <div class="logo">
+      <a href="./index.html" class="logo-bookshelf">
+        <svg
+          class="header-logo"
+          width="24"
+          height="24"
+          aria-label="logo bookshelf"
+        >
+          <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#logo"></use></svg>Bookshelf
+      </a>
+    </div>
+    <div class="main-menu js-mobile-menu">
+      <ul class="header-nav">
+        <li class="header-home-item">
+          <a
+            href="./index.html"
+            class="header-home-btn js-home-btn is-active-btn"
+            data-home-btn
+            data-sign-advanced
+            >Home</a
+          >
+        </li>
+        <li class="header-shop-item">
+          <a
+            href="./shop.html"
+            class="header-shopping-btn js-shopping-btn"
+            data-shopping-btn
+            data-sign-advanced
+          >
+            Shopping list
+            <svg
+              class="header-shopping-logo"
+              width="14"
+              height="17"
+              aria-label="shopping logo"
+            >
+              <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#icon-cart"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- SIGN UP -->
+      <div class="header-sign-btn" data-sign-base>
+        <button
+          class="log-in-btn"
+          type="button"
+          data-modal-open
+          aria-label="sign in"
+        >
+          <span class="sign-up-btn__text">Sign up</span>
+          <svg class="sign-up-btn__icon" width="20" height="20">
+            <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#arrow-right"></use>
+          </svg>
+        </button>
+        <ul class="user-bar js-user-bar visually-hidden">
+          <li class="user-bar__item">
+            <!-- User-bar-btn -->
+            <button
+              class="user-bar-btn js-user-bar-btn"
+              type="button"
+              aria-label="user bar button"
+            >
+              <svg class="user-bar-btn__avatar-icon" width="30" height="30">
+                <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#user"></use>
+              </svg>
+              <span class="user-bar-btn__text"></span>
+              <svg class="user-bar-btn__arrow-icon" width="23" height="26">
+                <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#icon-down-1"></use>
+              </svg>
+            </button>
+            <ul class="dropdown">
+              <li class="dropdown-list__item">
+                <!-- Log-out-btn -->
+                <button
+                  class="log-out-btn js-log-out-btn"
+                  type="button"
+                  aria-label="Log out"
+                >
+                  <span class="log-out-btn__text">Log out</span>
+                  <svg class="log-out-btn__icon" width="20" height="20">
+                    <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+      </div>
+    </div>
+    <!-- SWITCH AND BURGER -->
+    <div class="form-check">
+      <label class="switch" type="checkbox" id="themeSwitcher">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <button type="button" class="header-menu-btn" id="mobile-menu-btn">
+        <svg
+          class="icon-menu-burger"
+          width="28"
+          height="28"
+          aria-label="Switch-on mobile menu"
+        >
+          <use class="icon-menu" href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#menu-burger"></use>
+          <use class="icon-cross" href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#x-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!--HEADER NAV -->
+</header>
+
+
+    <main>
+      <div class="container home-page__flex">
+        <aside class="aside-flex">
+          <div>
+            <ul class="categories-list categories-list-js">
+  <li class="categories-list__item is-active">
+    <a href="#" class="link-allcategories">All categories</a>
+  </li>
+</ul>
+
+          </div>
+          <div>
+            <section class="supportUA js-support">
+  <div class="support_wrap-title">
+    <h3 class="support_title">Support Ukraine</h3>
+    <svg class="support_gerb" width="20" height="32">
+      <!-- emblema -->
+      <use href="/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#tryzub"></use>
+    </svg>
+  </div>
+  <div class="swiper">
+    <ul class="support_list-js swiper-wrapper"></ul>
+  </div>
+  <button
+    class="support_btn swiper-button-next"
+    type="button"
+    aria-label="swipe fund`s list down button"
+  >
+    <svg class="support_btn-icon" width="38" height="38">
+      <!-- strelka do dolu -->
+      <use
+        href="/js_77_oleksander-kozlov/assets/icons-e4e19de1.svg#icon-arrow-down"
+      ></use>
+    </svg>
+  </button>
+</section>
+
+          </div>
+        </aside>
+
+        <div class="books-wrapper">
+  <h2 class="categories-list__title js-category-title" id="books-scroll">
+    Best Sellers <span class="titel-span">Books</span>
+  </h2>
+
+  <ul class="books-list js-books-list"></ul>
+</div>
+
+        <!-- BOOK LIST -->
+<!-- <div class="container"></div> -->
+
+      </div>
+    </main>
+
+    <!-- Loads the specified .html file -->
+    <footer class="footer"> <!-- footer-dark -->
+<div class="footer-logo-svg">
+<div class="footer-logo-description">
+    <svg class="logo-svg">
+     <use class="logo-svg" href = "/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#logo"></use>
+</svg>
+<a class="footer-logo" href="#">Bookshelf</a> <!-- footer-logo-dark -->
+</div>
+<ul class="footer-nav">
+    <li class="footer-navigation-elements footer-nth-child"><a class="footer-nav-description" href="#">HOME</a></li> <!-- footer-nav-description-dark -->
+    <li class="footer-navigation-elements footer-nth-child"><a class="footer-nav-description" href="#">SHOPPING LIST</a></li> <!-- footer-nav-description-dark -->
+     <!-- <li class="footer-navigation-elements"><a class="footer-nav-description" href="#">LOG OUT</a></li> footer-nav-description-dark -->
+</ul>
+</div>
+
+<!-- MODAL -->
+<div id="Footer-modal" class="footer-modal">
+    <div class="footer-modal-content"> <!-- dark -->
+    <button class="footer-close-modal"> <!-- dark -->
+    <svg width="12px" height="12px">
+        <use class="footer-modal-close-btn" width="12px" height="12px" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-close-modal-icon"></use>
+    </svg>
+    </button>
+    <div class="footer-main-logo-svg">
+    <svg class="footer-modal-svg-book">
+        <use class="logo-svg" href = "/js_77_oleksander-kozlov/assets/sprite-bee06e58.svg#logo"></use>
+    </svg>
+    <h2 class="footer-hero-modal">Our Team</h2> <!-- dark -->
+    </div>
+
+<!-- DEVELOPER CARDS -->
+
+<div class="developer-card"> <!-- dark -->
+   <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/team-lead-oleksandr-kozlov-b757d9f6.webp" alt="Team-Lead"> <!-- dark -->
+    <h3 class="footer-dev-name">Oleksandr Kozlov</h3> <!-- dark -->
+    <p class="footer-dev-job">Team Lead</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/Oleksander-Kozlov">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin"> <!-- dark -->
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://www.linkedin.com/in/oleksandr-kozlov-648253272/">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin"> <!-- dark -->
+     <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+</div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/scrum-master-anastasiia-zaletska-d658a035.webp" alt="Scrum Master"> <!-- dark -->
+    <h3 class="footer-dev-name">Anastasiia Zaletska</h3> <!-- dark -->
+    <p class="footer-dev-job">Scrum Master</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/zaletska">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://www.linkedin.com/in/anastasiia-zaletska-986771271/">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+</div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-nikita-nikitin-7a87fa4b.webp" alt="Developer"> <!-- dark -->
+    <h3 class="footer-dev-name">Nikita Nikitin</h3> <!-- dark -->
+    <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/RainWell07">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://www.linkedin.com/in/nikita-nikitin-96164a276/">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+</div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-katerina-vasyuk-4a97769f.webp" alt="Developer"> <!-- dark -->
+    <h3 class="footer-dev-name">Katerina Vasyuk</h3> <!-- dark -->
+    <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/NonStopIT17">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://www.linkedin.com/in/katerina-vasyuk-1b7b9226b/">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+</div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-ivan-radko-1ecf67e1.webp" alt="Developer"> <!-- dark -->
+    <h3 class="footer-dev-name">Ivan Radko</h3> <!-- dark -->
+    <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/RadkoIvanUa">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" href="#">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+    </div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-olena-hrechykhina-0f1cdb6e.webp" alt="Developer"> <!-- dark -->
+    <h3 class="footer-dev-name">Olena Hrechykhina</h3> <!-- dark -->
+    <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/Elena-Hrechyk">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://www.linkedin.com/in/helen-h-99855726a/">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+</div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-volodymyr-vasilevich-1e67bbd1.webp" alt="Developer"> <!-- dark -->
+    <h3 class="footer-dev-name">Volodymyr Babinov</h3> <!-- dark -->
+    <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/VolodymyrBab">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://www.linkedin.com/in/volodymyr-vasilevich-18a248273/">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+</div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-maksym-kravchenko-f1e27260.webp" alt="Developer"> <!-- dark -->
+    <h3 class="footer-dev-name">Maksym Kravchenko</h3> <!-- dark -->
+    <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/Kmaksym1">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" href="#">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+</div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-taras-tovpyshko-441201ac.webp" alt="Developer"> <!-- dark -->
+    <h3 class="footer-dev-name">Taras Tovpyshko</h3> <!-- dark -->
+    <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/Taras355">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" href="#">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+</div>
+
+<div class="developer-card"> <!-- dark -->
+     <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-yaroslava-klymenko-7cb13788.webp" alt="Developer"> <!-- dark -->
+     <h3 class="footer-dev-name">Yaroslava Klymenko</h3> <!-- dark -->
+     <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+     <ul class="footer-svg-position">
+     <li class="developer-link">
+     <a class="social-links" target="_blank" href="https://github.com/YaroslavaKlymenko">
+     <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+     <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+     </svg>
+     </a>
+     </li>
+     <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://www.linkedin.com/in/yaroslava-klymenko-3055b3264">
+     <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+     <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+     </svg>
+     </a>
+     </li>
+     </ul>
+</div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-ivan-lisovenko-75f90d2a.webp" alt="Developer"> <!-- dark -->
+    <h3 class="footer-dev-name">Ivan Lisovenko</h3> <!-- dark -->
+    <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/lisovenko02">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin">
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" href="#">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin">
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+    </div>
+<div>
+
+<div class="developer-card"> <!-- dark -->
+    <img class="team-photos" loading="lazy" src="/js_77_oleksander-kozlov/assets/developer-oleksandr-smulskyi-582f257a.webp" alt="Developer"> <!-- dark -->
+    <h3 class="footer-dev-name">Oleksandr Smulskyi</h3> <!-- dark -->
+    <p class="footer-dev-job">Developer Team</p> <!-- dark -->
+    <ul class="footer-svg-position">
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://github.com/AlexHunter0209">
+    <svg width ="40px" height ="40px" class="footer-svg-linkedin"> <!-- dark -->
+    <use  width ="40px" height ="40px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-github-logo"></use>
+    </svg>
+    </a>
+    </li>
+    <li class="developer-link">
+    <a class="social-links" target="_blank" href="https://www.linkedin.com/in/oleksandr-smulskyi-72b8bb145/">
+    <svg width ="50px" height ="50px" class="footer-svg-linkedin"> <!-- dark -->
+    <use width ="50px" height ="50px" class="fill-footer-svg" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-linkedin-logo"></use>
+    </svg>
+    </a>
+    </li>
+    </ul>
+</div>
+
+<button class="footer-scroll"> <!-- dark -->
+    <svg width="24px" height = "24px">
+    <use class="footer-arrow" href = "/js_77_oleksander-kozlov/assets/footer-sprite-65ad3fd7.svg#icon-Vector"></use> <!-- dark -->
+    </svg>
+</button>
+
+</div>
+</div>
+</div>
+<button class="footer-btn" id="our-team-button">OUR TEAM</button> <!-- footer-btn-dark -->
+</footer>
+
+    <div class="backdrop hi-backdrop" data-modal>
+  <div class="modal" id="modalWindow">
+    <button type="button" class="modal-btn" data-action="close-modal">
+      <img
+        class="modal-icon"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADaSURBVHgBrZTRDYQgDIbBPmh8UidylNtE3MCRzg1uhVtAfZM3rjWSSARak/sTEvpXvtRSVQrVNM2Llnqo4Bxt2rZ1tLquGx5ABn+OGMU16ZwzEhhBtNbm6oG19lNVFfq6P72+rmu17/ssgeB+XNd1AgoQ9pbAYpBlWY4YvMnBcpAAlIOVZdnnIIen4n0w+HC06THIraJMZVkIqVBpOaGXrig2J6eSowEchF4HB3XmRgM4CPVEMmfAQXzMwUACkcCAvlxMTBwkB8P4G1w/B/Hats3gBYy3xD9+bD9RWZs//KbsnQAAAABJRU5ErkJggg=="
+        alt="close"
+        width="14"
+        height="14"
+      />
+    </button>
+    <div class="modal-content">
+      <div class="modal-content-body"></div>
+      <button
+        type="button"
+        class="add-modal-btn rem-modal-btn openmodal-btn"
+        data-action="add-to-list"
+        data-book-id="book-id"
+      >
+        Add to shopping list
+      </button>
+      <p class="modal-text">
+        Congratulations! You have added the book to the shopping list. To
+        delete, press the button “Remove from the shopping list”.
+      </p>
+    </div>
+  </div>
+</div>
+
+    
+  </body>
+</html>
